@@ -1,0 +1,7 @@
+{
+  "name": "Ahmed Mohamed Hesham portfolio ",
+  "description": "personal portfolio",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
