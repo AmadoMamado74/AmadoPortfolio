@@ -349,8 +349,8 @@ const App: React.FC = () => {
                 {data.workExperience.map((exp) => (
                   <div key={exp.id} className="group relative grid grid-cols-1 md:grid-cols-4 gap-6 md:gap-16">
                     <div className="md:col-span-1 text-left">
-                      <span className="text-[10px] md:text-[11px] font-bold text-zinc-500 uppercase tracking-widest block mb-2 md:mb-6">{exp.period}</span>
-                      <h4 className="text-2xl md:text-3xl font-black uppercase text-white leading-tight">{exp.company}</h4>
+                      <span className="text-[9px] md:text-[10px] font-bold text-zinc-500 uppercase tracking-widest block mb-2 md:mb-4">{exp.period}</span>
+                      <h4 className="text-xl md:text-2xl font-black uppercase text-white leading-tight">{exp.company}</h4>
                     </div>
                     <div className="md:col-span-3 border-l-0 md:border-l border-white/5 pl-0 md:pl-16 group-hover:border-white/20 transition-all duration-700 text-left">
                       <h5 className="text-lg md:text-xl font-light text-zinc-400 mb-4 md:mb-10 uppercase tracking-[0.2em]">{exp.role}</h5>
@@ -377,12 +377,12 @@ const App: React.FC = () => {
                 {data.education.map((edu) => (
                   <div key={edu.id} className="p-4 md:p-12 border border-white/10 bg-black/20 hover:border-white/40 transition-all duration-700 backdrop-blur-sm text-left">
                     <span className="text-[8px] md:text-[11px] font-bold text-zinc-500 uppercase tracking-widest">{edu.period}</span>
-                    <h4 className="text-lg md:text-4xl font-bold mt-2 md:mt-8 uppercase text-white">{edu.institution}</h4>
+                    <h4 className="text-lg md:text-2xl font-bold mt-2 md:mt-6 uppercase text-white">{edu.institution}</h4>
                     <p className="text-[12px] md:text-xl font-light text-zinc-400 mt-2 md:mt-6 tracking-wide italic">{edu.degree}</p>
                     {edu.gpa && (
                       <div className="mt-4 md:mt-10 pt-4 md:pt-8 border-t border-white/10 flex items-baseline justify-start gap-2 md:gap-4">
-                        <span className="text-lg md:text-4xl font-black text-white uppercase tracking-tight">CGPA</span>
-                        <span className="text-sm md:text-2xl font-medium text-zinc-500">{edu.gpa}</span>
+                        <span className="text-lg md:text-2xl font-black text-white uppercase tracking-tight">CGPA</span>
+                        <span className="text-sm md:text-xl font-medium text-zinc-500">{edu.gpa}</span>
                       </div>
                     )}
                   </div>
