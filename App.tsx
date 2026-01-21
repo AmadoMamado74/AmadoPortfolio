@@ -278,7 +278,7 @@ const App: React.FC = () => {
         <div className="lg:hidden flex items-center overflow-x-auto no-scrollbar py-2 max-w-[75%] border-l border-white/10 ml-2">
           <NavButton id="summary" label="Summary" active={activeSection === 'summary'} />
           <NavButton id="experience" label="Work" active={activeSection === 'experience'} />
-          <NavButton id="education" label="Edu" active={activeSection === 'education'} />
+          <NavButton id="education" label="Education" active={activeSection === 'education'} />
           <NavButton id="skills" label="Skills" active={activeSection === 'skills'} />
           <NavButton id="projects" label="Projects" active={activeSection === 'projects'} />
           <NavButton id="extra" label="Extra" active={activeSection === 'extra'} />
@@ -321,15 +321,15 @@ const App: React.FC = () => {
         <main className="relative">
 
           {/* Executive Summary Section */}
-          <section ref={sectionRefs.summary} className="px-8 md:px-16 py-24 md:py-48">
+          <section ref={sectionRefs.summary} className="px-8 md:px-16 py-12 md:py-48">
             <div className="max-w-7xl mx-auto">
-              <div className="flex flex-col md:flex-row items-center md:items-center gap-4 md:gap-12 mb-12 md:mb-32">
+              <div className="flex flex-col md:flex-row items-center md:items-center gap-4 md:gap-12 mb-8 md:mb-32">
                 <span className="text-zinc-300/10 text-6xl md:text-[14rem] font-black leading-none select-none">00</span>
-                <h3 className="text-4xl md:text-8xl font-bold uppercase tracking-[0.1em] md:-ml-40 text-white text-center md:text-left">Executive Summary</h3>
+                <h3 className="text-3xl md:text-8xl font-bold uppercase tracking-[0.1em] md:-ml-40 text-white text-center md:text-left">Executive Summary</h3>
               </div>
-              <div className="relative p-12 md:p-20 border border-white/10 bg-black/40 backdrop-blur-md group">
-                <div className="flex items-center justify-between gap-6 mb-12">
-                  <span className="text-zinc-400 text-[11px] font-bold uppercase tracking-[1em]">Strategic Overview</span>
+              <div className="relative p-8 md:p-20 border border-white/10 bg-black/40 backdrop-blur-md group">
+                <div className="flex items-center justify-between gap-6 mb-8 md:mb-12">
+                  <span className="text-zinc-400 text-[9px] md:text-[11px] font-bold uppercase tracking-[1em]">Strategic Overview</span>
                 </div>
                 <p className="text-lg md:text-4xl font-extralight leading-relaxed md:leading-tight text-white italic tracking-tight text-center md:text-left">
                   "{data.summary}"
@@ -339,11 +339,11 @@ const App: React.FC = () => {
           </section>
 
           {/* Work Experience */}
-          <section ref={sectionRefs.experience} className="min-h-screen px-6 md:px-16 py-24 md:py-48">
+          <section ref={sectionRefs.experience} className="pt-12 md:pt-48 pb-12 md:pb-48 px-6 md:px-16">
             <div className="max-w-7xl mx-auto">
-              <div className="flex flex-col md:flex-row items-center md:items-center gap-4 md:gap-12 mb-16 md:mb-40">
+              <div className="flex flex-col md:flex-row items-center md:items-center gap-4 md:gap-12 mb-10 md:mb-40">
                 <span className="text-zinc-300/10 text-6xl md:text-[14rem] font-black leading-none select-none">01</span>
-                <h3 className="text-4xl md:text-8xl font-bold uppercase tracking-[0.1em] md:-ml-40 text-white text-center md:text-left">Work Experience</h3>
+                <h3 className="text-3xl md:text-8xl font-bold uppercase tracking-[0.1em] md:-ml-40 text-white text-center md:text-left">Work Experience</h3>
               </div>
               <div className="space-y-24 md:space-y-48">
                 {data.workExperience.map((exp) => (
@@ -367,11 +367,11 @@ const App: React.FC = () => {
           </section>
 
           {/* Education */}
-          <section ref={sectionRefs.education} className="min-h-screen px-6 md:px-16 py-24 md:py-48">
+          <section ref={sectionRefs.education} className="pt-12 md:pt-48 pb-12 md:pb-48 px-6 md:px-16">
             <div className="max-w-7xl mx-auto">
-              <div className="flex flex-col md:flex-row items-center md:items-center gap-4 md:gap-12 mb-16 md:mb-40">
+              <div className="flex flex-col md:flex-row items-center md:items-center gap-4 md:gap-12 mb-10 md:mb-40">
                 <span className="text-zinc-300/10 text-6xl md:text-[14rem] font-black leading-none select-none">02</span>
-                <h3 className="text-4xl md:text-8xl font-bold uppercase tracking-[0.1em] md:-ml-40 text-white text-center md:text-left">Education</h3>
+                <h3 className="text-3xl md:text-8xl font-bold uppercase tracking-[0.1em] md:-ml-40 text-white text-center md:text-left">Education</h3>
               </div>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-10">
                 {data.education.map((edu) => (
@@ -392,11 +392,11 @@ const App: React.FC = () => {
           </section>
 
           {/* Technical Skills */}
-          <section ref={sectionRefs.skills} className="min-h-screen px-6 md:px-16 py-24 md:py-48">
+          <section ref={sectionRefs.skills} className="pt-12 md:pt-48 pb-12 md:pb-48 px-6 md:px-16">
             <div className="max-w-7xl mx-auto">
-              <div className="flex flex-col md:flex-row items-center md:items-center gap-4 md:gap-12 mb-16 md:mb-40">
+              <div className="flex flex-col md:flex-row items-center md:items-center gap-4 md:gap-12 mb-10 md:mb-40">
                 <span className="text-zinc-300/10 text-6xl md:text-[14rem] font-black leading-none select-none">03</span>
-                <h3 className="text-4xl md:text-8xl font-bold uppercase tracking-[0.1em] md:-ml-40 text-white text-center md:text-left">Technical Skills</h3>
+                <h3 className="text-3xl md:text-8xl font-bold uppercase tracking-[0.1em] md:-ml-40 text-white text-center md:text-left">Technical Skills</h3>
               </div>
               <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-16 lg:gap-24">
                 {/* Mechanical Engineering */}
@@ -448,11 +448,11 @@ const App: React.FC = () => {
           </section>
 
           {/* Projects */}
-          <section ref={sectionRefs.projects} className="min-h-screen px-6 md:px-16 py-24 md:py-48">
+          <section ref={sectionRefs.projects} className="pt-12 md:pt-48 pb-12 md:pb-48 px-6 md:px-16">
             <div className="max-w-7xl mx-auto">
-              <div className="flex flex-col md:flex-row items-center md:items-center gap-4 md:gap-12 mb-16 md:mb-40">
+              <div className="flex flex-col md:flex-row items-center md:items-center gap-4 md:gap-12 mb-10 md:mb-40">
                 <span className="text-zinc-300/10 text-6xl md:text-[14rem] font-black leading-none select-none">04</span>
-                <h3 className="text-4xl md:text-8xl font-bold uppercase tracking-[0.1em] md:-ml-40 text-white text-center md:text-left">Projects</h3>
+                <h3 className="text-3xl md:text-8xl font-bold uppercase tracking-[0.1em] md:-ml-40 text-white text-center md:text-left">Projects</h3>
               </div>
 
               <div className="space-y-24 md:space-y-32 mb-16 md:mb-24 transition-all duration-700">
@@ -488,11 +488,11 @@ const App: React.FC = () => {
           </section>
 
           {/* Extracurricular Activities */}
-          <section ref={sectionRefs.extra} className="min-h-screen px-6 md:px-16 py-24 md:py-48">
+          <section ref={sectionRefs.extra} className="pt-12 md:pt-48 pb-12 md:pb-48 px-6 md:px-16">
             <div className="max-w-7xl mx-auto transition-all">
-              <div className="flex flex-col md:flex-row items-center md:items-center gap-4 md:gap-12 mb-16 md:mb-40">
+              <div className="flex flex-col md:flex-row items-center md:items-center gap-4 md:gap-12 mb-10 md:mb-40">
                 <span className="text-zinc-300/10 text-6xl md:text-[14rem] font-black leading-none select-none">05</span>
-                <h3 className="text-4xl md:text-8xl font-bold uppercase tracking-[0.1em] md:-ml-40 text-white text-center md:text-left whitespace-normal md:whitespace-nowrap">Extracurriculars</h3>
+                <h3 className="text-2xl xs:text-3xl md:text-8xl font-bold uppercase tracking-[0.1em] md:-ml-40 text-white text-center md:text-left whitespace-normal md:whitespace-nowrap">Extracurriculars</h3>
               </div>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
                 {data.extracurriculars.map((act, i) => (
