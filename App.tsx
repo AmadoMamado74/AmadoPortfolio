@@ -255,7 +255,7 @@ const App: React.FC = () => {
       <div className="fixed inset-0 z-0 pointer-events-none overflow-hidden">
         <div className="absolute inset-0 w-full h-full bg-black">
           <img
-            src="/background.jpg"
+            src="background.jpg"
             className="w-full h-full object-cover grayscale brightness-[0.45] contrast-[1.1] opacity-75 transition-all duration-1000 object-[50%_25%]"
             alt="Ahmed Mohamed Hesham"
           />
