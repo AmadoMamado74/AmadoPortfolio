@@ -296,7 +296,7 @@ const App: React.FC = () => {
         {/* HERO */}
         <section className="min-h-[70vh] flex flex-col justify-center px-4 md:px-8">
           <header className="max-w-[1400px] mx-auto w-full text-left">
-            <h1 className="text-4xl sm:text-6xl md:text-8xl lg:text-[10rem] font-black uppercase tracking-tighter leading-[0.9] mb-8 md:mb-12 animate-in fade-in slide-in-from-bottom-4 duration-1000">
+            <h1 className="text-3xl sm:text-5xl md:text-8xl lg:text-[10rem] font-black uppercase tracking-tighter leading-[0.9] mb-6 md:mb-12 animate-in fade-in slide-in-from-bottom-4 duration-1000">
               Ahmed<br />Mohamed<br /><span className="text-zinc-500">Hesham</span>
             </h1>
 
@@ -325,13 +325,13 @@ const App: React.FC = () => {
             <div className="max-w-[1400px] mx-auto">
               <div className="flex flex-row items-center gap-4 md:gap-12 mb-8 md:mb-32">
                 <span className="text-zinc-300/10 text-5xl md:text-[14rem] font-black leading-none select-none">00</span>
-                <h3 className="text-[6.5vw] md:text-8xl font-bold uppercase tracking-tighter md:tracking-[0.05em] md:-ml-20 text-white text-left break-words">Executive Summary</h3>
+                <h3 className="text-2xl md:text-8xl font-bold uppercase tracking-tighter md:tracking-[0.05em] md:-ml-20 text-white text-left break-words">Executive Summary</h3>
               </div>
               <div className="relative p-6 md:p-16 border border-white/10 bg-black/40 backdrop-blur-md group">
                 <div className="flex items-center justify-between gap-6 mb-8 md:mb-12">
                   <span className="text-zinc-400 text-[9px] md:text-[11px] font-bold uppercase tracking-[0.5em] md:tracking-[1em]">Strategic Overview</span>
                 </div>
-                <p className="text-lg md:text-2xl lg:text-3xl font-extralight leading-relaxed md:leading-tight text-white italic tracking-tight text-left">
+                <p className="text-base md:text-2xl lg:text-3xl font-extralight leading-relaxed md:leading-tight text-white italic tracking-tight text-left">
                   "{data.summary}"
                 </p>
               </div>
@@ -343,20 +343,20 @@ const App: React.FC = () => {
             <div className="max-w-[1400px] mx-auto">
               <div className="flex flex-row items-center gap-4 md:gap-12 mb-8 md:mb-40">
                 <span className="text-zinc-300/10 text-5xl md:text-[14rem] font-black leading-none select-none">01</span>
-                <h3 className="text-[6.5vw] md:text-8xl font-bold uppercase tracking-tighter md:tracking-[0.15em] md:-ml-20 text-white text-left break-words">Work Experience</h3>
+                <h3 className="text-2xl md:text-8xl font-bold uppercase tracking-tighter md:tracking-[0.15em] md:-ml-20 text-white text-left break-words">Work Experience</h3>
               </div>
               <div className="space-y-16 md:space-y-48">
                 {data.workExperience.map((exp) => (
                   <div key={exp.id} className="group relative grid grid-cols-1 md:grid-cols-4 gap-6 md:gap-16">
                     <div className="md:col-span-1 text-left">
                       <span className="text-[10px] md:text-[11px] font-bold text-zinc-500 uppercase tracking-widest block mb-2 md:mb-6">{exp.period}</span>
-                      <h4 className="text-2xl md:text-3xl font-black uppercase text-white leading-tight">{exp.company}</h4>
+                      <h4 className="text-xl md:text-3xl font-black uppercase text-white leading-tight">{exp.company}</h4>
                     </div>
                     <div className="md:col-span-3 border-l-0 md:border-l border-white/5 pl-0 md:pl-16 group-hover:border-white/20 transition-all duration-700 text-left">
-                      <h5 className="text-lg md:text-xl font-light text-zinc-400 mb-4 md:mb-10 uppercase tracking-[0.2em]">{exp.role}</h5>
+                      <h5 className="text-sm md:text-xl font-light text-zinc-400 mb-4 md:mb-10 uppercase tracking-[0.2em]">{exp.role}</h5>
                       <ul className="space-y-3 md:space-y-8">
                         {exp.description.map((d, i) => (
-                          <li key={i} className="text-zinc-400 text-[14px] md:text-lg leading-relaxed font-light hover:text-white transition-colors">{d}</li>
+                          <li key={i} className="text-zinc-400 text-[12px] md:text-lg leading-relaxed font-light hover:text-white transition-colors">{d}</li>
                         ))}
                       </ul>
                     </div>
@@ -371,18 +371,18 @@ const App: React.FC = () => {
             <div className="max-w-[1400px] mx-auto">
               <div className="flex flex-row items-center gap-4 md:gap-12 mb-8 md:mb-40">
                 <span className="text-zinc-300/10 text-5xl md:text-[14rem] font-black leading-none select-none">02</span>
-                <h3 className="text-[6.5vw] md:text-8xl font-bold uppercase tracking-tighter md:tracking-[0.15em] md:-ml-20 text-white text-left break-words">Education</h3>
+                <h3 className="text-2xl md:text-8xl font-bold uppercase tracking-tighter md:tracking-[0.15em] md:-ml-20 text-white text-left break-words">Education</h3>
               </div>
               <div className="grid grid-cols-2 gap-4 md:gap-10">
                 {data.education.map((edu) => (
                   <div key={edu.id} className="p-4 md:p-12 border border-white/10 bg-black/20 hover:border-white/40 transition-all duration-700 backdrop-blur-sm text-left">
                     <span className="text-[8px] md:text-[11px] font-bold text-zinc-500 uppercase tracking-widest">{edu.period}</span>
-                    <h4 className="text-lg md:text-4xl font-bold mt-2 md:mt-8 uppercase text-white">{edu.institution}</h4>
-                    <p className="text-[12px] md:text-xl font-light text-zinc-400 mt-2 md:mt-6 tracking-wide italic">{edu.degree}</p>
+                    <h4 className="text-sm md:text-4xl font-bold mt-2 md:mt-8 uppercase text-white">{edu.institution}</h4>
+                    <p className="text-[10px] md:text-xl font-light text-zinc-400 mt-2 md:mt-6 tracking-wide italic">{edu.degree}</p>
                     {edu.gpa && (
                       <div className="mt-4 md:mt-10 pt-4 md:pt-8 border-t border-white/10 flex items-baseline justify-start gap-2 md:gap-4">
-                        <span className="text-lg md:text-4xl font-black text-white uppercase tracking-tight">CGPA</span>
-                        <span className="text-sm md:text-2xl font-medium text-zinc-500">{edu.gpa}</span>
+                        <span className="text-sm md:text-4xl font-black text-white uppercase tracking-tight">CGPA</span>
+                        <span className="text-[10px] md:text-2xl font-medium text-zinc-500">{edu.gpa}</span>
                       </div>
                     )}
                   </div>
@@ -396,7 +396,7 @@ const App: React.FC = () => {
             <div className="max-w-[1400px] mx-auto">
               <div className="flex flex-row items-center gap-4 md:gap-12 mb-8 md:mb-40">
                 <span className="text-zinc-300/10 text-5xl md:text-[14rem] font-black leading-none select-none">03</span>
-                <h3 className="text-[6.5vw] md:text-8xl font-bold uppercase tracking-tighter md:tracking-[0.15em] md:-ml-20 text-white text-left break-words">Technical Skills</h3>
+                <h3 className="text-2xl md:text-8xl font-bold uppercase tracking-tighter md:tracking-[0.15em] md:-ml-20 text-white text-left break-words">Technical Skills</h3>
               </div>
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 md:gap-16 lg:gap-24">
                 {/* Mechanical Engineering */}
@@ -452,18 +452,18 @@ const App: React.FC = () => {
             <div className="max-w-[1400px] mx-auto">
               <div className="flex flex-row items-center gap-4 md:gap-12 mb-8 md:mb-40">
                 <span className="text-zinc-300/10 text-5xl md:text-[14rem] font-black leading-none select-none">04</span>
-                <h3 className="text-[6.5vw] md:text-8xl font-bold uppercase tracking-tighter md:tracking-[0.15em] md:-ml-20 text-white text-left break-words">Projects</h3>
+                <h3 className="text-2xl md:text-8xl font-bold uppercase tracking-tighter md:tracking-[0.15em] md:-ml-20 text-white text-left break-words">Projects</h3>
               </div>
 
               <div className="space-y-16 md:space-y-32 mb-16 transition-all duration-700">
                 {visibleCategories.map((category, idx) => (
                   <div key={idx} className="space-y-8 md:space-y-16">
-                    <h4 className="text-white text-lg md:text-5xl font-black uppercase tracking-tight border-b-2 md:border-b-4 border-white pb-4 md:pb-6 inline-block text-left w-full md:w-auto">{category.title}</h4>
+                    <h4 className="text-white text-sm md:text-5xl font-black uppercase tracking-tight border-b-2 md:border-b-4 border-white pb-2 md:pb-6 inline-block text-left w-full md:w-auto">{category.title}</h4>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
                       {category.projects.map((p) => (
                         <div key={p.id} className="p-6 md:p-10 border border-white/10 bg-black/40 hover:bg-black/60 hover:border-white/40 transition-all duration-700 backdrop-blur-sm group text-left">
-                          <h4 className="text-xl md:text-3xl font-bold uppercase leading-tight mb-4 md:mb-8 text-white">{p.title}</h4>
-                          <p className="text-zinc-300 text-[12px] md:text-lg font-light leading-relaxed mb-6 md:mb-12">{p.description}</p>
+                          <h4 className="text-lg md:text-3xl font-bold uppercase leading-tight mb-4 md:mb-8 text-white">{p.title}</h4>
+                          <p className="text-zinc-300 text-[10px] md:text-lg font-light leading-relaxed mb-6 md:mb-12">{p.description}</p>
                           <div className="flex flex-wrap justify-start gap-2 md:gap-3">
                             {p.technologies.map(t => (
                               <span key={t} className="text-[8px] md:text-[9px] font-bold uppercase tracking-widest py-1 md:py-2 px-3 md:px-4 bg-white/5 text-zinc-400 group-hover:text-white transition-colors">{t}</span>
@@ -492,13 +492,13 @@ const App: React.FC = () => {
             <div className="max-w-[1400px] mx-auto transition-all">
               <div className="flex flex-row items-center gap-4 md:gap-12 mb-8 md:mb-40">
                 <span className="text-zinc-300/10 text-5xl md:text-[14rem] font-black leading-none select-none">05</span>
-                <h3 className="text-[6.5vw] md:text-8xl font-bold uppercase tracking-tighter md:tracking-[0.15em] md:-ml-20 text-white text-left break-words">Extracurriculars</h3>
+                <h3 className="text-2xl md:text-8xl font-bold uppercase tracking-tighter md:tracking-[0.15em] md:-ml-20 text-white text-left break-words">Extracurriculars</h3>
               </div>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
                 {data.extracurriculars.map((act, i) => (
                   <div key={i} className="flex flex-col justify-center p-6 md:p-10 border border-white/10 h-auto md:h-80 min-h-[160px] hover:border-white/40 transition-all duration-700 backdrop-blur-sm group hover:bg-black/40">
                     <span className="text-[8px] md:text-[11px] font-bold text-zinc-400 uppercase tracking-[0.5em] md:tracking-[1em] mb-4 md:mb-10 block group-hover:text-zinc-300">Contribution.0{i + 1}</span>
-                    <span className="text-[14px] md:text-2xl font-light uppercase tracking-tight text-white group-hover:text-white leading-relaxed">{act}</span>
+                    <span className="text-[12px] md:text-2xl font-light uppercase tracking-tight text-white group-hover:text-white leading-relaxed">{act}</span>
                   </div>
                 ))}
               </div>
@@ -510,7 +510,7 @@ const App: React.FC = () => {
             <div className="max-w-[1400px] mx-auto px-4 md:px-8">
               <div className="flex flex-row items-center gap-4 md:gap-12 mb-8 md:mb-40 text-left">
                 <span className="text-zinc-300/10 text-5xl md:text-[14rem] font-black leading-none select-none">06</span>
-                <h3 className="text-[6.5vw] md:text-8xl font-bold uppercase tracking-tighter md:tracking-[0.15em] md:-ml-20 text-white text-left break-words">Contact</h3>
+                <h3 className="text-2xl md:text-8xl font-bold uppercase tracking-tighter md:tracking-[0.15em] md:-ml-20 text-white text-left break-words">Contact</h3>
               </div>
 
               <div className="grid grid-cols-2 gap-4 md:gap-12 max-w-[1400px] mx-auto items-stretch">
