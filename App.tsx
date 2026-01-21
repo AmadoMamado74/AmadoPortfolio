@@ -321,11 +321,11 @@ const App: React.FC = () => {
         <main className="relative">
 
           {/* Executive Summary Section */}
-          <section ref={sectionRefs.summary} className="px-6 md:px-16 py-8 md:py-48">
+          <section ref={sectionRefs.summary} className="px-6 md:px-16 py-4 md:py-48">
             <div className="max-w-7xl mx-auto">
-              <div className="flex flex-col md:flex-row items-center md:items-center gap-4 md:gap-12 mb-6 md:mb-32">
-                <span className="text-zinc-300/10 text-5xl md:text-[14rem] font-black leading-none select-none">00</span>
-                <h3 className="text-[8vw] md:text-8xl font-bold uppercase tracking-[0.1em] md:-ml-40 text-white text-center md:text-left break-words w-full">Executive Summary</h3>
+              <div className="flex flex-col md:flex-row items-center md:items-center gap-2 md:gap-12 mb-4 md:mb-32">
+                <span className="text-zinc-300/10 text-4xl md:text-[14rem] font-black leading-none select-none">00</span>
+                <h3 className="text-2xl md:text-8xl font-bold uppercase tracking-[0.1em] md:-ml-40 text-white text-center md:text-left break-words w-full">Executive Summary</h3>
               </div>
               <div className="relative p-8 md:p-20 border border-white/10 bg-black/40 backdrop-blur-md group">
                 <div className="flex items-center justify-between gap-6 mb-8 md:mb-12">
@@ -339,11 +339,11 @@ const App: React.FC = () => {
           </section>
 
           {/* Work Experience */}
-          <section ref={sectionRefs.experience} className="pt-8 md:pt-48 pb-8 md:pb-48 px-6 md:px-16">
+          <section ref={sectionRefs.experience} className="pt-4 md:pt-48 pb-4 md:pb-48 px-6 md:px-16">
             <div className="max-w-7xl mx-auto">
-              <div className="flex flex-col md:flex-row items-center md:items-center gap-4 md:gap-12 mb-6 md:mb-40">
-                <span className="text-zinc-300/10 text-5xl md:text-[14rem] font-black leading-none select-none">01</span>
-                <h3 className="text-[8vw] md:text-8xl font-bold uppercase tracking-[0.1em] md:-ml-40 text-white text-center md:text-left break-words w-full">Work Experience</h3>
+              <div className="flex flex-col md:flex-row items-center md:items-center gap-2 md:gap-12 mb-4 md:mb-40">
+                <span className="text-zinc-300/10 text-4xl md:text-[14rem] font-black leading-none select-none">01</span>
+                <h3 className="text-2xl md:text-8xl font-bold uppercase tracking-[0.1em] md:-ml-40 text-white text-center md:text-left break-words w-full">Work Experience</h3>
               </div>
               <div className="space-y-24 md:space-y-48">
                 {data.workExperience.map((exp) => (
@@ -367,11 +367,11 @@ const App: React.FC = () => {
           </section>
 
           {/* Education */}
-          <section ref={sectionRefs.education} className="pt-8 md:pt-48 pb-8 md:pb-48 px-6 md:px-16">
+          <section ref={sectionRefs.education} className="pt-4 md:pt-48 pb-4 md:pb-48 px-6 md:px-16">
             <div className="max-w-7xl mx-auto">
-              <div className="flex flex-col md:flex-row items-center md:items-center gap-4 md:gap-12 mb-6 md:mb-40">
-                <span className="text-zinc-300/10 text-5xl md:text-[14rem] font-black leading-none select-none">02</span>
-                <h3 className="text-[8vw] md:text-8xl font-bold uppercase tracking-[0.1em] md:-ml-40 text-white text-center md:text-left break-words w-full">Education</h3>
+              <div className="flex flex-col md:flex-row items-center md:items-center gap-2 md:gap-12 mb-4 md:mb-40">
+                <span className="text-zinc-300/10 text-4xl md:text-[14rem] font-black leading-none select-none">02</span>
+                <h3 className="text-2xl md:text-8xl font-bold uppercase tracking-[0.1em] md:-ml-40 text-white text-center md:text-left break-words w-full">Education</h3>
               </div>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-10">
                 {data.education.map((edu) => (
@@ -392,11 +392,11 @@ const App: React.FC = () => {
           </section>
 
           {/* Technical Skills */}
-          <section ref={sectionRefs.skills} className="pt-8 md:pt-48 pb-8 md:pb-48 px-6 md:px-16">
+          <section ref={sectionRefs.skills} className="pt-4 md:pt-48 pb-4 md:pb-48 px-6 md:px-16">
             <div className="max-w-7xl mx-auto">
-              <div className="flex flex-col md:flex-row items-center md:items-center gap-4 md:gap-12 mb-6 md:mb-40">
-                <span className="text-zinc-300/10 text-5xl md:text-[14rem] font-black leading-none select-none">03</span>
-                <h3 className="text-[8vw] md:text-8xl font-bold uppercase tracking-[0.1em] md:-ml-40 text-white text-center md:text-left break-words w-full">Technical Skills</h3>
+              <div className="flex flex-col md:flex-row items-center md:items-center gap-2 md:gap-12 mb-4 md:mb-40">
+                <span className="text-zinc-300/10 text-4xl md:text-[14rem] font-black leading-none select-none">03</span>
+                <h3 className="text-2xl md:text-8xl font-bold uppercase tracking-[0.1em] md:-ml-40 text-white text-center md:text-left break-words w-full">Technical Skills</h3>
               </div>
               <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-16 lg:gap-24">
                 {/* Mechanical Engineering */}
@@ -448,11 +448,11 @@ const App: React.FC = () => {
           </section>
 
           {/* Projects */}
-          <section ref={sectionRefs.projects} className="pt-8 md:pt-48 pb-8 md:pb-48 px-6 md:px-16">
+          <section ref={sectionRefs.projects} className="pt-4 md:pt-48 pb-4 md:pb-48 px-6 md:px-16">
             <div className="max-w-7xl mx-auto">
-              <div className="flex flex-col md:flex-row items-center md:items-center gap-4 md:gap-12 mb-6 md:mb-40">
-                <span className="text-zinc-300/10 text-5xl md:text-[14rem] font-black leading-none select-none">04</span>
-                <h3 className="text-[8vw] md:text-8xl font-bold uppercase tracking-[0.1em] md:-ml-40 text-white text-center md:text-left break-words w-full">Projects</h3>
+              <div className="flex flex-col md:flex-row items-center md:items-center gap-2 md:gap-12 mb-4 md:mb-40">
+                <span className="text-zinc-300/10 text-4xl md:text-[14rem] font-black leading-none select-none">04</span>
+                <h3 className="text-2xl md:text-8xl font-bold uppercase tracking-[0.1em] md:-ml-40 text-white text-center md:text-left break-words w-full">Projects</h3>
               </div>
 
               <div className="space-y-24 md:space-y-32 mb-16 md:mb-24 transition-all duration-700">
@@ -488,11 +488,11 @@ const App: React.FC = () => {
           </section>
 
           {/* Extracurricular Activities */}
-          <section ref={sectionRefs.extra} className="pt-8 md:pt-48 pb-8 md:pb-48 px-6 md:px-16">
+          <section ref={sectionRefs.extra} className="pt-4 md:pt-48 pb-4 md:pb-48 px-6 md:px-16">
             <div className="max-w-7xl mx-auto transition-all">
-              <div className="flex flex-col md:flex-row items-center md:items-center gap-4 md:gap-12 mb-6 md:mb-40">
-                <span className="text-zinc-300/10 text-5xl md:text-[14rem] font-black leading-none select-none">05</span>
-                <h3 className="text-[7.5vw] md:text-8xl font-bold uppercase tracking-[0.1em] md:-ml-40 text-white text-center md:text-left break-words w-full">Extracurriculars</h3>
+              <div className="flex flex-col md:flex-row items-center md:items-center gap-2 md:gap-12 mb-4 md:mb-40">
+                <span className="text-zinc-300/10 text-4xl md:text-[14rem] font-black leading-none select-none">05</span>
+                <h3 className="text-2xl md:text-8xl font-bold uppercase tracking-[0.1em] md:-ml-40 text-white text-center md:text-left break-words w-full">Extracurriculars</h3>
               </div>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
                 {data.extracurriculars.map((act, i) => (
@@ -506,11 +506,11 @@ const App: React.FC = () => {
           </section>
 
           {/* CONTACT SECTION */}
-          <footer ref={footerRef} className="pt-8 md:pt-64 pb-16 md:pb-64 border-t border-white/10 no-print">
+          <footer ref={footerRef} className="pt-4 md:pt-64 pb-8 md:pb-64 border-t border-white/10 no-print">
             <div className="max-w-7xl mx-auto px-6 md:px-8">
-              <div className="flex flex-col md:flex-row items-center md:items-center gap-4 md:gap-12 mb-6 md:mb-40 text-center md:text-left">
-                <span className="text-zinc-300/10 text-5xl md:text-[14rem] font-black leading-none select-none">06</span>
-                <h3 className="text-[8vw] md:text-8xl font-bold uppercase tracking-[0.1em] md:-ml-40 text-white text-center md:text-left break-words w-full">Contact</h3>
+              <div className="flex flex-col md:flex-row items-center md:items-center gap-2 md:gap-12 mb-4 md:mb-40 text-center md:text-left">
+                <span className="text-zinc-300/10 text-4xl md:text-[14rem] font-black leading-none select-none">06</span>
+                <h3 className="text-2xl md:text-8xl font-bold uppercase tracking-[0.1em] md:-ml-40 text-white text-center md:text-left break-words w-full">Contact</h3>
               </div>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-5xl mx-auto items-stretch">
