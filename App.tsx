@@ -295,9 +295,9 @@ const App: React.FC = () => {
       <div className="relative z-10 pt-24">
         {/* HERO */}
         <section className="min-h-[70vh] flex flex-col justify-center px-4 md:px-8">
-          <header className="max-w-[1800px] mx-auto w-full text-left">
+          <header className="max-w-[1400px] mx-auto w-full text-left">
             <h1 className="text-4xl sm:text-6xl md:text-8xl lg:text-[10rem] font-black uppercase tracking-tighter leading-[0.9] mb-8 md:mb-12 animate-in fade-in slide-in-from-bottom-4 duration-1000">
-              Ahmed Mohamed<br /><span className="text-zinc-500">Hesham</span>
+              Ahmed<br />Mohamed<br /><span className="text-zinc-500">Hesham</span>
             </h1>
 
             <div className="flex flex-col md:flex-row justify-start gap-6 md:gap-32">
@@ -322,7 +322,7 @@ const App: React.FC = () => {
 
           {/* Executive Summary Section */}
           <section ref={sectionRefs.summary} className="px-4 md:px-8 py-8 md:py-48">
-            <div className="max-w-[1800px] mx-auto">
+            <div className="max-w-[1400px] mx-auto">
               <div className="flex flex-row items-center gap-4 md:gap-12 mb-8 md:mb-32">
                 <span className="text-zinc-300/10 text-5xl md:text-[14rem] font-black leading-none select-none">00</span>
                 <h3 className="text-[6.5vw] md:text-8xl font-bold uppercase tracking-tighter md:tracking-[0.05em] md:-ml-20 text-white text-left break-words">Executive Summary</h3>
@@ -340,7 +340,7 @@ const App: React.FC = () => {
 
           {/* Work Experience */}
           <section ref={sectionRefs.experience} className="pt-8 md:pt-48 pb-8 md:pb-48 px-4 md:px-8">
-            <div className="max-w-[1800px] mx-auto">
+            <div className="max-w-[1400px] mx-auto">
               <div className="flex flex-row items-center gap-4 md:gap-12 mb-8 md:mb-40">
                 <span className="text-zinc-300/10 text-5xl md:text-[14rem] font-black leading-none select-none">01</span>
                 <h3 className="text-[6.5vw] md:text-8xl font-bold uppercase tracking-tighter md:tracking-[0.15em] md:-ml-20 text-white text-left break-words">Work Experience</h3>
@@ -368,7 +368,7 @@ const App: React.FC = () => {
 
           {/* Education */}
           <section ref={sectionRefs.education} className="pt-8 md:pt-48 pb-8 md:pb-48 px-4 md:px-8">
-            <div className="max-w-[1800px] mx-auto">
+            <div className="max-w-[1400px] mx-auto">
               <div className="flex flex-row items-center gap-4 md:gap-12 mb-8 md:mb-40">
                 <span className="text-zinc-300/10 text-5xl md:text-[14rem] font-black leading-none select-none">02</span>
                 <h3 className="text-[6.5vw] md:text-8xl font-bold uppercase tracking-tighter md:tracking-[0.15em] md:-ml-20 text-white text-left break-words">Education</h3>
@@ -393,7 +393,7 @@ const App: React.FC = () => {
 
           {/* Technical Skills */}
           <section ref={sectionRefs.skills} className="pt-8 md:pt-48 pb-8 md:pb-48 px-4 md:px-8">
-            <div className="max-w-[1800px] mx-auto">
+            <div className="max-w-[1400px] mx-auto">
               <div className="flex flex-row items-center gap-4 md:gap-12 mb-8 md:mb-40">
                 <span className="text-zinc-300/10 text-5xl md:text-[14rem] font-black leading-none select-none">03</span>
                 <h3 className="text-[6.5vw] md:text-8xl font-bold uppercase tracking-tighter md:tracking-[0.15em] md:-ml-20 text-white text-left break-words">Technical Skills</h3>
@@ -449,7 +449,7 @@ const App: React.FC = () => {
 
           {/* Projects */}
           <section ref={sectionRefs.projects} className="pt-8 md:pt-48 pb-8 md:pb-48 px-4 md:px-8">
-            <div className="max-w-[1800px] mx-auto">
+            <div className="max-w-[1400px] mx-auto">
               <div className="flex flex-row items-center gap-4 md:gap-12 mb-8 md:mb-40">
                 <span className="text-zinc-300/10 text-5xl md:text-[14rem] font-black leading-none select-none">04</span>
                 <h3 className="text-[6.5vw] md:text-8xl font-bold uppercase tracking-tighter md:tracking-[0.15em] md:-ml-20 text-white text-left break-words">Projects</h3>
@@ -489,7 +489,7 @@ const App: React.FC = () => {
 
           {/* Extracurricular Activities */}
           <section ref={sectionRefs.extra} className="pt-8 md:pt-48 pb-8 md:pb-48 px-4 md:px-8">
-            <div className="max-w-[1800px] mx-auto transition-all">
+            <div className="max-w-[1400px] mx-auto transition-all">
               <div className="flex flex-row items-center gap-4 md:gap-12 mb-8 md:mb-40">
                 <span className="text-zinc-300/10 text-5xl md:text-[14rem] font-black leading-none select-none">05</span>
                 <h3 className="text-[6.5vw] md:text-8xl font-bold uppercase tracking-tighter md:tracking-[0.15em] md:-ml-20 text-white text-left break-words">Extracurriculars</h3>
@@ -507,7 +507,7 @@ const App: React.FC = () => {
 
           {/* CONTACT SECTION */}
           <footer ref={footerRef} className="pt-8 md:pt-64 pb-16 border-t border-white/10 no-print">
-            <div className="max-w-[1800px] mx-auto px-4 md:px-8">
+            <div className="max-w-[1400px] mx-auto px-4 md:px-8">
               <div className="flex flex-row items-center gap-4 md:gap-12 mb-8 md:mb-40 text-left">
                 <span className="text-zinc-300/10 text-5xl md:text-[14rem] font-black leading-none select-none">06</span>
                 <h3 className="text-[6.5vw] md:text-8xl font-bold uppercase tracking-tighter md:tracking-[0.15em] md:-ml-20 text-white text-left break-words">Contact</h3>
