@@ -275,7 +275,7 @@ const App: React.FC = () => {
           <NavButton id="extra" label="Extra" active={activeSection === 'extra'} />
         </div>
 
-        <div className="lg:hidden flex items-center overflow-x-auto no-scrollbar py-2 max-w-[70%] border-l border-white/10 ml-1 gap-0">
+        <div className="lg:hidden flex items-center overflow-x-auto no-scrollbar py-2 max-w-[80%] border-l border-white/10 ml-1 gap-0">
           <NavButton id="summary" label="Summary" active={activeSection === 'summary'} />
           <NavButton id="experience" label="Work" active={activeSection === 'experience'} />
           <NavButton id="education" label="Edu" active={activeSection === 'education'} />
@@ -401,7 +401,7 @@ const App: React.FC = () => {
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 md:gap-16 lg:gap-24">
                 {/* Mechanical Engineering */}
                 <div className="space-y-8 md:space-y-10">
-                  <h4 className="text-sm md:text-2xl font-black text-white uppercase tracking-tight md:tracking-[0.15em] mb-4 md:mb-12 border-b border-white/20 pb-3 md:pb-8 flex items-start">
+                  <h4 className="text-xs md:text-2xl font-black text-white uppercase tracking-tight md:tracking-[0.15em] mb-3 md:mb-12 border-b border-white/20 pb-2 md:pb-8 flex items-start">
                     Mechanical<br />Engineering
                   </h4>
                   <div className="grid grid-cols-2 md:grid-cols-1 gap-2 md:gap-5">
@@ -416,7 +416,7 @@ const App: React.FC = () => {
 
                 {/* System & Controls */}
                 <div className="space-y-8 md:space-y-10">
-                  <h4 className="text-sm md:text-2xl font-black text-white uppercase tracking-tight md:tracking-[0.15em] mb-4 md:mb-12 border-b border-white/20 pb-3 md:pb-8 flex items-start">
+                  <h4 className="text-xs md:text-2xl font-black text-white uppercase tracking-tight md:tracking-[0.15em] mb-3 md:mb-12 border-b border-white/20 pb-2 md:pb-8 flex items-start">
                     System &<br />Controls
                   </h4>
                   <div className="grid grid-cols-2 md:grid-cols-1 gap-2 md:gap-5">
@@ -431,7 +431,7 @@ const App: React.FC = () => {
 
                 {/* Electrical Engineering */}
                 <div className="space-y-8 md:space-y-10">
-                  <h4 className="text-sm md:text-2xl font-black text-white uppercase tracking-tight md:tracking-[0.15em] mb-4 md:mb-12 border-b border-white/20 pb-3 md:pb-8 flex items-start">
+                  <h4 className="text-xs md:text-2xl font-black text-white uppercase tracking-tight md:tracking-[0.15em] mb-3 md:mb-12 border-b border-white/20 pb-2 md:pb-8 flex items-start">
                     Electrical<br />Engineering
                   </h4>
                   <div className="grid grid-cols-2 lg:grid-cols-1 gap-4 md:gap-5">
