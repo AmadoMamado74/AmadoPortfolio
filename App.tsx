@@ -235,13 +235,13 @@ const App: React.FC = () => {
   const NavButton = ({ label, id, active }: { label: string, id: SectionId, active: boolean }) => (
     <button
       onClick={() => scrollToSection(id)}
-      className={`group relative px-4 xl:px-6 py-4 transition-all duration-300 ${active ? 'text-white' : 'text-zinc-400 hover:text-white'}`}
+      className={`group relative px-2 md:px-4 xl:px-6 py-4 transition-all duration-300 ${active ? 'text-white' : 'text-zinc-400 hover:text-white'}`}
     >
-      <span className="relative z-10 text-[9px] xl:text-[10px] font-bold uppercase tracking-[0.2em] xl:tracking-[0.3em] whitespace-nowrap">
+      <span className="relative z-10 text-[6.5px] md:text-[9px] xl:text-[10px] font-bold uppercase tracking-tight md:tracking-[0.2em] xl:tracking-[0.3em] whitespace-nowrap">
         {label}
       </span>
       {active && (
-        <div className="absolute bottom-4 left-4 xl:left-6 right-4 xl:right-6 h-0.5 bg-white shadow-[0_0_10px_white]" />
+        <div className="absolute bottom-4 left-2 md:left-4 xl:left-6 right-2 md:right-4 xl:right-6 h-0.5 bg-white shadow-[0_0_10px_white]" />
       )}
     </button>
   );
@@ -275,20 +275,20 @@ const App: React.FC = () => {
           <NavButton id="extra" label="Extra" active={activeSection === 'extra'} />
         </div>
 
-        <div className="lg:hidden flex items-center overflow-x-auto no-scrollbar py-2 max-w-[70%] border-l border-white/10 ml-2 gap-0">
+        <div className="lg:hidden flex items-center overflow-x-auto no-scrollbar py-2 max-w-[70%] border-l border-white/10 ml-1 gap-0">
           <NavButton id="summary" label="Summary" active={activeSection === 'summary'} />
           <NavButton id="experience" label="Work" active={activeSection === 'experience'} />
-          <NavButton id="education" label="Education" active={activeSection === 'education'} />
+          <NavButton id="education" label="Edu" active={activeSection === 'education'} />
           <NavButton id="skills" label="Skills" active={activeSection === 'skills'} />
-          <NavButton id="projects" label="Projects" active={activeSection === 'projects'} />
+          <NavButton id="projects" label="Proj" active={activeSection === 'projects'} />
           <NavButton id="extra" label="Extra" active={activeSection === 'extra'} />
         </div>
 
         <button
           onClick={scrollToContact}
-          className="group relative px-4 md:px-8 py-2 md:py-3 bg-white text-black rounded-full transition-all duration-300 hover:bg-zinc-200 active:scale-95 shadow-2xl shrink-0"
+          className="group relative px-3 md:px-8 py-1.5 md:py-3 bg-white text-black rounded-full transition-all duration-300 hover:bg-zinc-200 active:scale-95 shadow-2xl shrink-0"
         >
-          <span className="relative z-10 text-[8px] md:text-[10px] font-black uppercase tracking-[0.2em] md:tracking-[0.3em]">Connect</span>
+          <span className="relative z-10 text-[7px] md:text-[10px] font-black uppercase tracking-widest md:tracking-[0.3em]">Connect</span>
         </button>
       </nav>
 
@@ -296,7 +296,7 @@ const App: React.FC = () => {
         {/* HERO */}
         <section className="min-h-[70vh] flex flex-col justify-center px-6 md:px-16">
           <header className="max-w-7xl mx-auto w-full text-left">
-            <h1 className="text-5xl md:text-8xl lg:text-[10rem] font-black uppercase tracking-tighter leading-[0.9] mb-8 md:mb-12 animate-in fade-in slide-in-from-bottom-4 duration-1000">
+            <h1 className="text-4xl sm:text-6xl md:text-8xl lg:text-[10rem] font-black uppercase tracking-tighter leading-[0.9] mb-8 md:mb-12 animate-in fade-in slide-in-from-bottom-4 duration-1000">
               Ahmed Mohamed<br /><span className="text-zinc-500">Hesham</span>
             </h1>
 
@@ -325,7 +325,7 @@ const App: React.FC = () => {
             <div className="max-w-7xl mx-auto">
               <div className="flex flex-row items-center gap-4 md:gap-12 mb-8 md:mb-32">
                 <span className="text-zinc-300/10 text-5xl md:text-[14rem] font-black leading-none select-none">00</span>
-                <h3 className="text-2xl md:text-8xl font-bold uppercase tracking-[0.05em] md:-ml-40 text-white text-left break-words">Executive Summary</h3>
+                <h3 className="text-[6.5vw] md:text-8xl font-bold uppercase tracking-tighter md:tracking-[0.05em] md:-ml-40 text-white text-left break-words">Executive Summary</h3>
               </div>
               <div className="relative p-8 md:p-20 border border-white/10 bg-black/40 backdrop-blur-md group">
                 <div className="flex items-center justify-between gap-6 mb-8 md:mb-12">
@@ -343,7 +343,7 @@ const App: React.FC = () => {
             <div className="max-w-7xl mx-auto">
               <div className="flex flex-row items-center gap-4 md:gap-12 mb-8 md:mb-40">
                 <span className="text-zinc-300/10 text-5xl md:text-[14rem] font-black leading-none select-none">01</span>
-                <h3 className="text-2xl md:text-8xl font-bold uppercase tracking-[0.15em] md:-ml-40 text-white text-left break-words">Work Experience</h3>
+                <h3 className="text-[6.5vw] md:text-8xl font-bold uppercase tracking-tighter md:tracking-[0.15em] md:-ml-40 text-white text-left break-words">Work Experience</h3>
               </div>
               <div className="space-y-16 md:space-y-48">
                 {data.workExperience.map((exp) => (
@@ -371,7 +371,7 @@ const App: React.FC = () => {
             <div className="max-w-7xl mx-auto">
               <div className="flex flex-row items-center gap-4 md:gap-12 mb-8 md:mb-40">
                 <span className="text-zinc-300/10 text-5xl md:text-[14rem] font-black leading-none select-none">02</span>
-                <h3 className="text-2xl md:text-8xl font-bold uppercase tracking-[0.15em] md:-ml-40 text-white text-left break-words">Education</h3>
+                <h3 className="text-[6.5vw] md:text-8xl font-bold uppercase tracking-tighter md:tracking-[0.15em] md:-ml-40 text-white text-left break-words">Education</h3>
               </div>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-10">
                 {data.education.map((edu) => (
@@ -396,19 +396,19 @@ const App: React.FC = () => {
             <div className="max-w-7xl mx-auto">
               <div className="flex flex-row items-center gap-4 md:gap-12 mb-8 md:mb-40">
                 <span className="text-zinc-300/10 text-5xl md:text-[14rem] font-black leading-none select-none">03</span>
-                <h3 className="text-2xl md:text-8xl font-bold uppercase tracking-[0.15em] md:-ml-40 text-white text-left break-words">Technical Skills</h3>
+                <h3 className="text-[6.5vw] md:text-8xl font-bold uppercase tracking-tighter md:tracking-[0.15em] md:-ml-40 text-white text-left break-words">Technical Skills</h3>
               </div>
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 md:gap-16 lg:gap-24">
                 {/* Mechanical Engineering */}
                 <div className="space-y-8 md:space-y-10">
-                  <h4 className="text-xl md:text-2xl font-black text-white uppercase tracking-[0.15em] mb-8 md:mb-12 border-b border-white/20 pb-6 md:pb-8 flex items-start">
+                  <h4 className="text-sm md:text-2xl font-black text-white uppercase tracking-tight md:tracking-[0.15em] mb-4 md:mb-12 border-b border-white/20 pb-3 md:pb-8 flex items-start">
                     Mechanical<br />Engineering
                   </h4>
-                  <div className="grid grid-cols-2 md:grid-cols-1 gap-4 md:gap-5">
+                  <div className="grid grid-cols-2 md:grid-cols-1 gap-2 md:gap-5">
                     {data.skills.mechanical.map((s) => (
                       <div key={s} className="group flex items-center gap-3 transition-all duration-300">
                         <div className="w-1 h-1 bg-white/40 group-hover:bg-white transition-all shrink-0" />
-                        <span className="text-[13px] md:text-[14px] font-medium uppercase tracking-[0.1em] text-zinc-400 group-hover:text-white transition-colors">{s}</span>
+                        <span className="text-[10px] md:text-[14px] font-medium uppercase tracking-tight md:tracking-[0.1em] text-zinc-400 group-hover:text-white transition-colors">{s}</span>
                       </div>
                     ))}
                   </div>
@@ -416,14 +416,14 @@ const App: React.FC = () => {
 
                 {/* System & Controls */}
                 <div className="space-y-8 md:space-y-10">
-                  <h4 className="text-xl md:text-2xl font-black text-white uppercase tracking-[0.15em] mb-8 md:mb-12 border-b border-white/20 pb-6 md:pb-8 flex items-start">
+                  <h4 className="text-sm md:text-2xl font-black text-white uppercase tracking-tight md:tracking-[0.15em] mb-4 md:mb-12 border-b border-white/20 pb-3 md:pb-8 flex items-start">
                     System &<br />Controls
                   </h4>
-                  <div className="grid grid-cols-2 md:grid-cols-1 gap-4 md:gap-5">
+                  <div className="grid grid-cols-2 md:grid-cols-1 gap-2 md:gap-5">
                     {data.skills.systems.map((s) => (
                       <div key={s} className="group flex items-center gap-3 transition-all duration-300">
                         <div className="w-1 h-1 bg-white/40 group-hover:bg-white transition-all shrink-0" />
-                        <span className="text-[13px] md:text-[14px] font-medium uppercase tracking-[0.1em] text-zinc-400 group-hover:text-white transition-colors">{s}</span>
+                        <span className="text-[10px] md:text-[14px] font-medium uppercase tracking-tight md:tracking-[0.1em] text-zinc-400 group-hover:text-white transition-colors">{s}</span>
                       </div>
                     ))}
                   </div>
@@ -431,14 +431,14 @@ const App: React.FC = () => {
 
                 {/* Electrical Engineering */}
                 <div className="space-y-8 md:space-y-10">
-                  <h4 className="text-xl md:text-2xl font-black text-white uppercase tracking-[0.15em] mb-8 md:mb-12 border-b border-white/20 pb-6 md:pb-8 flex items-start">
+                  <h4 className="text-sm md:text-2xl font-black text-white uppercase tracking-tight md:tracking-[0.15em] mb-4 md:mb-12 border-b border-white/20 pb-3 md:pb-8 flex items-start">
                     Electrical<br />Engineering
                   </h4>
                   <div className="grid grid-cols-2 lg:grid-cols-1 gap-4 md:gap-5">
                     {data.skills.electrical.map((s) => (
                       <div key={s} className="group flex items-center gap-3 transition-all duration-300">
                         <div className="w-1 h-1 bg-white/40 group-hover:bg-white transition-all shrink-0" />
-                        <span className="text-[13px] md:text-[14px] font-medium uppercase tracking-[0.1em] text-zinc-400 group-hover:text-white transition-colors">{s}</span>
+                        <span className="text-[10px] md:text-[14px] font-medium uppercase tracking-tight md:tracking-[0.1em] text-zinc-400 group-hover:text-white transition-colors">{s}</span>
                       </div>
                     ))}
                   </div>
@@ -452,13 +452,13 @@ const App: React.FC = () => {
             <div className="max-w-7xl mx-auto">
               <div className="flex flex-row items-center gap-4 md:gap-12 mb-8 md:mb-40">
                 <span className="text-zinc-300/10 text-5xl md:text-[14rem] font-black leading-none select-none">04</span>
-                <h3 className="text-2xl md:text-8xl font-bold uppercase tracking-[0.15em] md:-ml-40 text-white text-left break-words">Projects</h3>
+                <h3 className="text-[6.5vw] md:text-8xl font-bold uppercase tracking-tighter md:tracking-[0.15em] md:-ml-40 text-white text-left break-words">Projects</h3>
               </div>
 
               <div className="space-y-16 md:space-y-32 mb-16 transition-all duration-700">
                 {visibleCategories.map((category, idx) => (
                   <div key={idx} className="space-y-8 md:space-y-16">
-                    <h4 className="text-white text-xl md:text-5xl font-black uppercase tracking-tight border-b-2 md:border-b-4 border-white pb-4 md:pb-6 inline-block text-left w-full md:w-auto">{category.title}</h4>
+                    <h4 className="text-white text-lg md:text-5xl font-black uppercase tracking-tight border-b-2 md:border-b-4 border-white pb-4 md:pb-6 inline-block text-left w-full md:w-auto">{category.title}</h4>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
                       {category.projects.map((p) => (
                         <div key={p.id} className="p-8 md:p-12 border border-white/10 bg-black/40 hover:bg-black/60 hover:border-white/40 transition-all duration-700 backdrop-blur-sm group text-left">
@@ -492,13 +492,13 @@ const App: React.FC = () => {
             <div className="max-w-7xl mx-auto transition-all">
               <div className="flex flex-row items-center gap-4 md:gap-12 mb-8 md:mb-40">
                 <span className="text-zinc-300/10 text-5xl md:text-[14rem] font-black leading-none select-none">05</span>
-                <h3 className="text-2xl md:text-8xl font-bold uppercase tracking-[0.15em] md:-ml-40 text-white text-left break-words">Extracurriculars</h3>
+                <h3 className="text-[6.5vw] md:text-8xl font-bold uppercase tracking-tighter md:tracking-[0.15em] md:-ml-40 text-white text-left break-words">Extracurriculars</h3>
               </div>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
                 {data.extracurriculars.map((act, i) => (
                   <div key={i} className="flex flex-col justify-center p-8 md:p-14 border border-white/10 h-auto md:h-80 min-h-[160px] hover:border-white/40 transition-all duration-700 backdrop-blur-sm group hover:bg-black/40">
                     <span className="text-[10px] md:text-[11px] font-bold text-zinc-400 uppercase tracking-[0.8em] md:tracking-[1em] mb-6 md:mb-10 block group-hover:text-zinc-300">Contribution.0{i + 1}</span>
-                    <span className="text-xl md:text-2xl font-light uppercase tracking-tight text-white group-hover:text-white leading-relaxed">{act}</span>
+                    <span className="text-lg md:text-2xl font-light uppercase tracking-tight text-white group-hover:text-white leading-relaxed">{act}</span>
                   </div>
                 ))}
               </div>
@@ -510,7 +510,7 @@ const App: React.FC = () => {
             <div className="max-w-7xl mx-auto px-6 md:px-8">
               <div className="flex flex-row items-center gap-4 md:gap-12 mb-8 md:mb-40 text-left">
                 <span className="text-zinc-300/10 text-5xl md:text-[14rem] font-black leading-none select-none">06</span>
-                <h3 className="text-2xl md:text-8xl font-bold uppercase tracking-[0.15em] md:-ml-40 text-white text-left break-words">Contact</h3>
+                <h3 className="text-[6.5vw] md:text-8xl font-bold uppercase tracking-tighter md:tracking-[0.15em] md:-ml-40 text-white text-left break-words">Contact</h3>
               </div>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-5xl mx-auto items-stretch">
