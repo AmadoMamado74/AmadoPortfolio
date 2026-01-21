@@ -331,7 +331,7 @@ const App: React.FC = () => {
                 <div className="flex items-center justify-between gap-6 mb-8 md:mb-12">
                   <span className="text-zinc-400 text-[9px] md:text-[11px] font-bold uppercase tracking-[0.5em] md:tracking-[1em]">Strategic Overview</span>
                 </div>
-                <p className="text-lg md:text-2xl lg:text-3xl font-extralight leading-relaxed md:leading-tight text-white italic tracking-tight text-justify">
+                <p className="text-lg md:text-2xl lg:text-3xl font-extralight leading-relaxed md:leading-tight text-white italic tracking-tight text-left">
                   "{data.summary}"
                 </p>
               </div>
@@ -349,14 +349,14 @@ const App: React.FC = () => {
                 {data.workExperience.map((exp) => (
                   <div key={exp.id} className="group relative grid grid-cols-1 md:grid-cols-4 gap-6 md:gap-16">
                     <div className="md:col-span-1 text-left">
-                      <span className="text-[9px] md:text-[10px] font-bold text-zinc-500 uppercase tracking-widest block mb-2 md:mb-4">{exp.period}</span>
-                      <h4 className="text-xl md:text-2xl font-black uppercase text-white leading-tight">{exp.company}</h4>
+                      <span className="text-[10px] md:text-[11px] font-bold text-zinc-500 uppercase tracking-widest block mb-2 md:mb-6">{exp.period}</span>
+                      <h4 className="text-2xl md:text-3xl font-black uppercase text-white leading-tight">{exp.company}</h4>
                     </div>
                     <div className="md:col-span-3 border-l-0 md:border-l border-white/5 pl-0 md:pl-16 group-hover:border-white/20 transition-all duration-700 text-left">
                       <h5 className="text-lg md:text-xl font-light text-zinc-400 mb-4 md:mb-10 uppercase tracking-[0.2em]">{exp.role}</h5>
                       <ul className="space-y-3 md:space-y-8">
                         {exp.description.map((d, i) => (
-                          <li key={i} className="text-zinc-400 text-[14px] md:text-lg leading-relaxed font-light hover:text-white transition-colors text-justify">{d}</li>
+                          <li key={i} className="text-zinc-400 text-[14px] md:text-lg leading-relaxed font-light hover:text-white transition-colors">{d}</li>
                         ))}
                       </ul>
                     </div>
@@ -377,12 +377,12 @@ const App: React.FC = () => {
                 {data.education.map((edu) => (
                   <div key={edu.id} className="p-4 md:p-12 border border-white/10 bg-black/20 hover:border-white/40 transition-all duration-700 backdrop-blur-sm text-left">
                     <span className="text-[8px] md:text-[11px] font-bold text-zinc-500 uppercase tracking-widest">{edu.period}</span>
-                    <h4 className="text-lg md:text-2xl font-bold mt-2 md:mt-6 uppercase text-white">{edu.institution}</h4>
+                    <h4 className="text-lg md:text-4xl font-bold mt-2 md:mt-8 uppercase text-white">{edu.institution}</h4>
                     <p className="text-[12px] md:text-xl font-light text-zinc-400 mt-2 md:mt-6 tracking-wide italic">{edu.degree}</p>
                     {edu.gpa && (
                       <div className="mt-4 md:mt-10 pt-4 md:pt-8 border-t border-white/10 flex items-baseline justify-start gap-2 md:gap-4">
-                        <span className="text-lg md:text-2xl font-black text-white uppercase tracking-tight">CGPA</span>
-                        <span className="text-sm md:text-xl font-medium text-zinc-500">{edu.gpa}</span>
+                        <span className="text-lg md:text-4xl font-black text-white uppercase tracking-tight">CGPA</span>
+                        <span className="text-sm md:text-2xl font-medium text-zinc-500">{edu.gpa}</span>
                       </div>
                     )}
                   </div>
@@ -463,7 +463,7 @@ const App: React.FC = () => {
                       {category.projects.map((p) => (
                         <div key={p.id} className="p-6 md:p-10 border border-white/10 bg-black/40 hover:bg-black/60 hover:border-white/40 transition-all duration-700 backdrop-blur-sm group text-left">
                           <h4 className="text-xl md:text-3xl font-bold uppercase leading-tight mb-4 md:mb-8 text-white">{p.title}</h4>
-                          <p className="text-zinc-300 text-[12px] md:text-lg font-light leading-relaxed mb-6 md:mb-12 text-justify">{p.description}</p>
+                          <p className="text-zinc-300 text-[12px] md:text-lg font-light leading-relaxed mb-6 md:mb-12">{p.description}</p>
                           <div className="flex flex-wrap justify-start gap-2 md:gap-3">
                             {p.technologies.map(t => (
                               <span key={t} className="text-[8px] md:text-[9px] font-bold uppercase tracking-widest py-1 md:py-2 px-3 md:px-4 bg-white/5 text-zinc-400 group-hover:text-white transition-colors">{t}</span>
@@ -532,7 +532,7 @@ const App: React.FC = () => {
               </div>
 
               <div className="mt-64 text-center">
-                <span className="text-[11px] font-bold uppercase tracking-[2em] text-zinc-600">{data.contact.name} — JAN 2026</span>
+                <span className="text-[11px] font-bold uppercase tracking-[3em] text-zinc-600">{data.contact.name} — MMXXV</span>
               </div>
             </div>
           </footer>
