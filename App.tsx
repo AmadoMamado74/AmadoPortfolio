@@ -100,7 +100,7 @@ const App: React.FC = () => {
         degree: "B.Sc. in Mechatronics Engineering, Level 4",
         period: "2022 – Present",
         location: "Egypt",
-        gpa: "3.17"
+        gpa: "3.28"
       },
       {
         id: 'e2',
@@ -517,17 +517,17 @@ const App: React.FC = () => {
                 {/* Phone Card */}
                 <div className="flex flex-col items-center justify-center p-6 md:p-16 border border-white/20 bg-white/5 hover:border-white hover:bg-white/10 transition-all duration-500 text-center group min-h-[140px] md:min-h-[220px] rounded-sm backdrop-blur-md">
                   <span className="text-[8px] md:text-[12px] font-bold uppercase tracking-[0.5em] md:tracking-[1em] text-zinc-400 block mb-4 md:mb-8 group-hover:text-white transition-colors">Direct Phone</span>
-                  <span className="text-[10px] sm:text-sm md:text-3xl font-light tracking-[0.1em] text-white group-hover:scale-105 transition-transform duration-500 whitespace-nowrap">
+                  <a href={`tel:${data.contact.phone}`} className="text-[10px] sm:text-sm md:text-3xl font-light tracking-[0.1em] text-white group-hover:scale-105 transition-transform duration-500 whitespace-nowrap hover:text-white transition-colors">
                     {data.contact.phone}
-                  </span>
+                  </a>
                 </div>
 
                 {/* Email Card */}
                 <div className="flex flex-col items-center justify-center p-6 md:p-16 border border-white/20 bg-white/5 hover:border-white hover:bg-white/10 transition-all duration-500 text-center group min-h-[140px] md:min-h-[220px] rounded-sm overflow-hidden backdrop-blur-sm">
                   <span className="text-[8px] md:text-[12px] font-bold uppercase tracking-[0.5em] md:tracking-[1em] text-zinc-400 block mb-4 md:mb-8 group-hover:text-white transition-colors">Direct Email</span>
-                  <span className="text-[10px] sm:text-sm md:text-2xl font-light tracking-tight text-white group-hover:scale-105 transition-transform duration-500 truncate w-full px-2 md:px-4">
+                  <a href={`mailto:${data.contact.email}`} className="text-[10px] sm:text-sm md:text-2xl font-light tracking-tight text-white group-hover:scale-105 transition-transform duration-500 truncate w-full px-2 md:px-4 hover:text-white transition-colors">
                     {data.contact.email}
-                  </span>
+                  </a>
                 </div>
               </div>
 
